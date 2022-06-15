@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Course</title>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="description" content="Lingua project">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+      <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+      <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+      <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+      <link rel="stylesheet" type="text/css" href="styles/course.css">
+      <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
+      <link rel="stylesheet" type="text/css" href="styles/course_responsive.css">
+   </head>
+   <body>
+      <style>
+         .top_bar_phone{
+         border-radius: 60px;
+         border: 1px solid #010101;
+         }
+         .top_bar_phone1
+         {
+         border-radius: 60px;
+         .polaroids {
+         margin: 0 auto;
+         padding: 20px;
+         text-align: center;
+         }
+         .polaroid {
+         display: inline-block;
+         margin: 10px;
+         position: relative;
+         width: auto;
+         }
+         .polaroid img {
+         border: 12px solid #fff;
+         border-bottom: 70px solid #fff;
+         -webkit-box-shadow: 3px 3px 3px #888;
+         -moz-box-shadow: 3px 3px 3px #888;
+         box-shadow: 3px 3px 3px #888;
+         height: auto;
+         max-width: 100%;
+         }
+         .polaroid p {
+         color: #888;
+         font: 500 18px/22px Arial, sans-serif;
+         position: absolute;
+         bottom: 0;
+         text-align: center;
+         width: 100%;
+         }  
+      </style>
+      <div class="super_container">
+         <!-- Header -->
+         <header class="header">
+            <!-- Top Bar -->
+            <div class="top_bar">
+               <div class="top_bar_container">
+                  <div class="container-fluid">
+                     <div class="row">
+                        <div class="col col-md-6">
+                           <div class="logo_container mr-auto" style="position: relative;">
+                              <a href="#" style="display: block;margin: 0 auto;">
+                                 <!-- <div class="logo_text">Talent Computer </div> -->
+                                 <img src="images/img/talentlogo.png" alt="" style="height: 70px;position: absolute;top: 20px;left: 80px;"> 
+                              </a>
+                           </div>
+                        </div>
+                        <div class="col col-md-6">
+                           <div class="top_bar_content d-flex flex-row align-items-center justify-content-start" style="margin-left: -35px;">
+                              <div class="ml-2 d-flex align-items-center px-3 py-2 text-dark top_bar_phone bg"><i class="mr-2 fa fa-whatsapp text-success" aria-hidden="true"></i>+91 86903 46112</div>
+                              <div class="ml-2  d-flex align-items-center ml-1 px-3 py-2 text-dark top_bar_phone"><i class="mr-2 fa fa-download text-primary" aria-hidden="true"></i><span class="top_bar_title"> Download Syllabus</span></div>
+                              <div class=" bg-edit-orange-color ml-2 d-flex align-items-center ml-1 px-3 py-2 text-white top_bar_phone1"><i class="mr-2 fa fa-envelope-open-o" aria-hidden="true"></i>
+                                 <span class="top_bar_title"> FREE Demo Lecture</span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- Header Content -->
+            <div class="header_container">
+               <div class="container">
+                  <div class="row">
+                     <div class="col" style="padding: 0;margin: 0;">
+                        <div class="header_content d-flex flex-row align-items-center justify-content-start" style="padding-bottom: 12px;padding-top: -44px !important;margin-top: 0;">
+                           <div class="logo_container mr-auto">
+                              <a href="#">
+                                 <!-- <div class="logo_text">Talent Computer </div> -->
+                              </a>
+                           </div>
+                           <nav class="main_nav_contaner">
+                              <ul class="main_nav  " style="margin-left: 430px;">
+                                 <!-- <li><a href="instructors.html">Courses</a></li> -->
+                                 <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="courseDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Course</a>
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="courseDropdown" style="margin-top: -3px">
+                                       <!-- <a class="dropdown-item" href="course.html">What we do</a> -->
+                                       <!-- <a class="dropdown-item" href="#">How we fit your needs</a> -->
+                                       <div class="dropdown"></div>
+                                       <div class="d-md-flex align-items-start justify-content-start">
+                                          <div>
+                                             <div class="dropdown-header">
+                                                <b>
+                                                   Programming Course
+                                                   <hr class="hr_header">
+                                                </b>
+                                             </div>
+                                             <a class="dropdown-item" href="#">
+                                             <img class ="icon_head"src="icon/header/python.png" >Python Programming</a>
+                                             <a class="dropdown-item" href="#">
+                                             <img class ="icon_head"src="icon/header/java.png" >Java Programming</a>
+                                             <a class="dropdown-item" href="#"><img class ="icon_head"src="icon/header/c.png" >C,C++  Programming</a>
+                                             <a class="dropdown-item" href="#"> <img class ="icon_head"src="icon/header/html_css.png" >Web Programming</a>
+                                             <a class="dropdown-item" href="#"> <img class ="icon_head"src="icon/header/android.png" >Android Programming</a>
+                                             <a class="dropdown-item" href="#"><img class ="icon_head"src="icon/header/php.png" >PHP Programming</a>
+                                             <a class="dropdown-item" href="#"><img class ="icon_head"src="icon/header/.net.png" >.NET Programming</a>
+                                          </div>
+                                          <div>
+                                             <div class="dropdown-header">
+                                                <b>
+                                                   Designing Course
+                                                   <hr class="hr_header">
+                                                </b>
+                                             </div>
+                                             <a class="dropdown-item" href="#"><img class ="icon_head"src="icon/header/graphics.png" >Graphics Design </a>
+                                             <a class="dropdown-item" href="#"><img class ="icon_head"src="icon/header/web_develop.png" >Web Development</a>
+                                             <br>
+                                             <div class="dropdown-header">
+                                                <b>
+                                                   Course 
+                                                   <hr class="hr_header">
+                                                </b>
+                                             </div>
+                                             <a class="dropdown-item" href="#"> <img class ="icon_head"src="icon/header/cyber_security.png" >  Cyber Security  </a>
+                                             <a class="dropdown-item" href="#"><img class ="icon_head"src="icon/header/data_science.png" >Data Science</a>
+                                          </div>
+                                          <div>
+                                             <div class="dropdown-header">
+                                                <b>
+                                                   Live Project Training
+                                                   <hr class="hr_header">
+                                                </b>
+                                             </div>
+                                             <a class="dropdown-item" href="#"><img class ="icon_head"src="icon/header/php.png" >PHP Training Course</a>
+                                             <a class="dropdown-item" href="#">
+                                             <img class ="icon_head"src="icon/header/python.png" >Python Programming</a>
+                                             <a class="dropdown-item" href="#"><img class ="icon_head"src="icon/header/java.png" >Java Training Course</a>
+                                             <a class="dropdown-item" href="#"><img class ="icon_head"src="icon/header/.net.png" >
+                                             ASP.NET Training Course</a>
+                                             <a class="dropdown-item" href="#"><img class ="icon_head"src="icon/header/android.png" >Android Training Course</a>
+                                             <a class="dropdown-item" href="#"><img class ="icon_head"src="icon/header/html_css.png" >Web Designing Training Course</a>
+                                             <a class="dropdown-item" href="#"><img class ="icon_head"src="icon/header/c.png" >C,C++ Training Course</a>
+                                          </div>
+                                          <div>
+                                             <div class="dropdown-header">
+                                                <b>
+                                                   Certificate Course
+                                                   <hr class="hr_header">
+                                                </b>
+                                             </div>
+                                             <a class="dropdown-item" href="#"><img class ="icon_head"src="icon/header/ccc.png" >CCC Certificate Course</a>
+                                             <a class="dropdown-item" href="#"><img class ="icon_head"src="icon/header/digital_marketing.png" >Diploma in Digital Marketing</a>
+                                             <a class="dropdown-item" href="#"><img class ="icon_head"src="icon/header/computer_application.png" >DCA (Diploma in computer Application)</a>
+                                             <a class="dropdown-item" href="#"><img class ="icon_head"src="icon/header/training.png" >Certificate in Teaching Training</a>
+                                             <a class="dropdown-item" href="#"><img class ="icon_head"src="icon/header/diploma.png" >Diploma in Computer Expert</a>
+                                             <a class="dropdown-item" href="#"><img class ="icon_head"src="icon/header/computer.png" >Basic Computer</a>
+                                          </div>
+                                          <div>
+                                             <div class="dropdown-header">
+                                                <b>
+                                                   Accounting Course
+                                                   <hr class="hr_header">
+                                                </b>
+                                             </div>
+                                             <a class="dropdown-item" href="#">
+                                             <img class ="icon_head"src="icon/header/tally.png" >Tally ERP</a>
+                                             <a class="dropdown-item" href="#"> <img class ="icon_head"src="icon/header/excel.png" >Advance Excel</a>
+                                             <a class="dropdown-item" href="#"><img class ="icon_head"src="icon/header/finnacial.png" >Finnacial Software</a>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </li>
+                                 <li><a href="https://ahmedabad.codingjr.online/ " target="_blank">CodingJr</a></li>
+                                 <li ><a href="" id="Faculty" >Faculty</a></li>
+                                 <li><a href="gallery.html">Gallery</a></li>
+                                 <li><a href="placements.html">Placement</a></li>
+                                 <li><a href="contact.html">Contact</a></li>
+                              </ul>
+                           </nav>
+                           <div class="header_content_right ml-auto text-right">
+                              <div class="hamburger menu_mm">
+                                 <i class="fa fa-bars menu_mm" aria-hidden="true"></i>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </header>
+         <!-- Menu -->
+         <div class="menu d-flex flex-column align-items-end justify-content-start text-right menu_mm trans_400">
+            <div class="menu_close_container">
+               <div class="menu_close">
+                  <div></div>
+                  <div></div>
+               </div>
+            </div>
+            <div class="search">
+               <form action="#" class="header_search_form menu_mm">
+                  <input type="search" class="search_input menu_mm" placeholder="Search" required="required">
+                  <button class="header_search_button d-flex flex-column align-items-center justify-content-center menu_mm">
+                  <i class="fa fa-search menu_mm" aria-hidden="true"></i>
+                  </button>
+               </form>
+            </div>
+            <nav class="menu_nav">
+               <ul class="menu_mm">
+                  <li class="menu_mm"><a href="index.html">Home</a></li>
+                  <li class="menu_mm"><a href="courses.html">Courses</a></li>
+                  <li class="menu_mm"><a href="instructors.html">Instructors</a></li>
+                  <li class="menu_mm"><a href="#">Events</a></li>
+                  <li class="menu_mm"><a href="blog.html">Blog</a></li>
+                  <li class="menu_mm"><a href="contact.html">Contact</a></li>
+               </ul>
+            </nav>
+            <div class="menu_extra">
+               <div class="menu_phone"><span class="menu_title">phone:</span>+44 300 303 0266</div>
+               <div class="menu_social">
+                  <span class="menu_title">follow us</span>
+                  <ul>
+                     <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                     <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                     <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <!-- Home -->
+         <div class="home">
+            <div class="breadcrumbs_container">
+               <div class="container">
+                  <div class="row">
+                     <div class="col">
+                        <ul class="breadcrumbs_list d-flex flex-row align-items-center justify-content-start">
+                           <li><a href="index.html">home</a></li>
+                           <li><a href="#">Placements</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="container">
+            <div class="intro">
+               <div class="intro_background parallax-window" data-parallax="scroll" data-image-src="placement/placement1.jpg" data-speed="0.8"></div>
+               <div class="container">
+                  <div class="row">
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-lg-12 col-md-12 col-sm-12">
+                  <h3 class="training-heading">PLACEMENT PROCESS</h3>
+                  <div class="divider-line-3"></div>
+               </div>
+            </div>
+            <div class="row" style="margin-top:30px;">
+               <div class="col-lg-2 col-md-2 col-sm-3 col-xs-12">
+                  <div class="student-placement-process" style="height: 150px;">
+                     <img src="placement/enroll-course.png" alt="">
+                     <h5 class="headtitle">Enroll To Our Courses</h5>
+                  </div>
+               </div>
+               <div class="col-lg-2 col-md-2 col-sm-3 col-xs-12">
+                  <div class="student-placement-process" style="height: 150px;">
+                     <img src="placement/training.png" alt="">
+                     <h5 class="headtitle">Get Training</h5>
+                  </div>
+               </div>
+               <div class="col-lg-2 col-md-2 col-sm-3 col-xs-12">
+                  <div class="student-placement-process" style="height: 150px;">
+                     <img src="placement/student.png" alt="">
+                     <h5 class="headtitle">Make Live Projects</h5>
+                  </div>
+               </div>
+               <div class="col-lg-2 col-md-2 col-sm-3 col-xs-12">
+                  <div class="student-placement-process" style="height: 150px;">
+                     <img src="placement/interview.png" alt="">
+                     <h5 class="headtitle">Appear For Interview </h5>
+                  </div>
+               </div>
+               <div class="col-lg-2 col-md-2 col-sm-3 col-xs-12">
+                  <div class="student-placement-process" style="height: 150px;">
+                     <img src="placement/hand-shake.png" data-toggle="tooltip" title="Placed Student" alt="">
+                     <h5 class="headtitle">Crack Interview </h5>
+                  </div>
+               </div>
+               <div class="col-lg-2 col-md-2 col-sm-3 col-xs-12">
+                  <div class="student-placement-process" style="height: 150px;">
+                     <img src="placement/get-hired.png" data-toggle="tooltip" title="Placed Student" alt="">
+                     <h5 class="headtitle">Get Job</h5>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-lg-12 col-md-12 col-sm-12">
+                  <h3 class="training-heading">OUR PLACED STUDENTS</h3>
+                  <div class="divider-line-3"></div>
+               </div>
+               <div class="courses ">
+                  <!--    <div class="courses_background"></div> -->
+                  <div class="container wrapper zoom-effect-container">
+                     <div class="row courses_row">
+                        <!-- Course -->
+                        <div class="col-lg-2 course_col image-card">
+                           <div class="placment_box">
+                              <div class="placement_image"><img class ="w-100" src="placement/MAKWANAJAYESHKUMARVIKRAMBHAI.jpg" alt=""></div>
+                              <div class="course_body">
+                                 <div ><a href="#" class="placement_title">Jayesh Makwana</a></div>
+                                 <div class="course_text">
+                                    <p class="place_clg">SIDDHII VINAYAK HOSPITAL MANINAGAR</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- Course -->
+                        <div class="col-lg-2 course_col">
+                           <div class="placment_box">
+                              <div class="placement_image"><img class ="w-100" src="Placement/ASHMIRAANSARI.jpg" alt=""></div>
+                              <div class="course_body">
+                                 <div ><a href="#" class="placement_title">Ashmira Ansari</a></div>
+                                 <div class="course_text">
+                                    <p class="place_clg">SIDDHII VINAYAK HOSPITAL MANINAGAR 
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- Course -->
+                        <div class="col-lg-2 course_col">
+                           <div class="placment_box">
+                              <div class="placement_image"><img class ="w-100" src="Placement/PARMARSANJANAPIYUSHBHAI.jpg" alt=""></div>
+                              <div class="course_body">
+                                 <div ><a href="#" class="placement_title">Sanjana Parmar</a></div>
+                                 <div class="course_text">
+                                    <p class="place_clg">METALIYA HOSPITAL BAPUNAGAR
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-2 course_col">
+                           <div class="placment_box">
+                              <div class="placement_image"><img class ="w-100" src="Placement/VAGHELASHARADGAUTAMBHAI.jpg" alt=""></div>
+                              <div class="course_body">
+                                 <div ><a href="#" class="placement_title">Sharad Vaghela</a></div>
+                                 <div class="course_text">
+                                    <p class="place_clg" >PALLAV HOSPITAL MNINAGAR
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+
+                         <div class="col-lg-2 course_col">
+                           <div class="placment_box">
+                              <div class="placement_image"><img class ="w-100" src="Placement/VAGHELASHARADGAUTAMBHAI.jpg" alt=""></div>
+                              <div class="course_body">
+                                 <div ><a href="#"class="placement_title">Sharad Vaghela</a></div>
+                                 <div class="course_text">
+                                    <p class="place_clg">PALLAV HOSPITAL MNINAGAR
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+
+                         <div class="col-lg-2 course_col">
+                           <div class="placment_box">
+                              <div class="placement_image"><img class ="w-100" src="Placement/VAGHELASHARADGAUTAMBHAI.jpg" alt=""></div>
+                              <div class="course_body">
+                                 <div ><a href="#" class="placement_title">Sharad Vaghela</a></div>
+                                 <div class="course_text">
+                                    <p class="place_clg">PALLAV HOSPITAL MNINAGAR
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+
+
+                     </div>
+
+
+
+
+
+<div class="row courses_row">
+                        <!-- Course -->
+                        <div class="col-lg-2 course_col image-card">
+                           <div class="placment_box">
+                              <div class="placement_image"><img class ="w-100" src="placement/MAKWANAJAYESHKUMARVIKRAMBHAI.jpg" alt=""></div>
+                              <div class="course_body">
+                                 <div ><a href="#" class="placement_title">Jayesh Makwana</a></div>
+                                 <div class="course_text">
+                                    <p class="place_clg">SIDDHII VINAYAK HOSPITAL MANINAGAR</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- Course -->
+                        <div class="col-lg-2 course_col">
+                           <div class="placment_box">
+                              <div class="placement_image"><img class ="w-100" src="Placement/ASHMIRAANSARI.jpg" alt=""></div>
+                              <div class="course_body">
+                                 <div ><a href="#" class="placement_title">Ashmira Ansari</a></div>
+                                 <div class="course_text">
+                                    <p class="place_clg">SIDDHII VINAYAK HOSPITAL MANINAGAR 
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- Course -->
+                        <div class="col-lg-2 course_col">
+                           <div class="placment_box">
+                              <div class="placement_image"><img class ="w-100" src="Placement/PARMARSANJANAPIYUSHBHAI.jpg" alt=""></div>
+                              <div class="course_body">
+                                 <div ><a href="#" class="placement_title">Sanjana Parmar</a></div>
+                                 <div class="course_text">
+                                    <p class="place_clg">METALIYA HOSPITAL BAPUNAGAR
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-2 course_col">
+                           <div class="placment_box">
+                              <div class="placement_image"><img class ="w-100" src="Placement/VAGHELASHARADGAUTAMBHAI.jpg" alt=""></div>
+                              <div class="course_body">
+                                 <div ><a href="#" class="placement_title">Sharad Vaghela</a></div>
+                                 <div class="course_text">
+                                    <p class="place_clg" >PALLAV HOSPITAL MNINAGAR
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+
+                         <div class="col-lg-2 course_col">
+                           <div class="placment_box">
+                              <div class="placement_image"><img class ="w-100" src="Placement/VAGHELASHARADGAUTAMBHAI.jpg" alt=""></div>
+                              <div class="course_body">
+                                 <div ><a href="#"class="placement_title">Sharad Vaghela</a></div>
+                                 <div class="course_text">
+                                    <p class="place_clg">PALLAV HOSPITAL MNINAGAR
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+
+                         <div class="col-lg-2 course_col">
+                           <div class="placment_box">
+                              <div class="placement_image"><img class ="w-100" src="Placement/VAGHELASHARADGAUTAMBHAI.jpg" alt=""></div>
+                              <div class="course_body">
+                                 <div ><a href="#" class="placement_title">Sharad Vaghela</a></div>
+                                 <div class="course_text">
+                                    <p class="place_clg">PALLAV HOSPITAL MNINAGAR
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+
+
+                     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Footer -->
+         <footer class="footer">
+            <div class="footer_body">
+               <div class="container">
+                  <div class="row">
+                     <!-- Newsletter -->
+                     <div class="col-lg-3 footer_col">
+                        <div class="newsletter_container d-flex flex-column align-items-start justify-content-end">
+                           <div class="footer_logo mb-auto">
+                              <a href="#">Talent Computer </a>
+                              <p class=" text-justify mt-2" style="color: rgba(255,255,255,0.4);">Talent Computer is one of the largest IT Training Institute.Talent Computer specializes in providing Courses to students for all software languages.<br> We Provide Courses For BCA, MCA, PGDCA, Bsc(IT), Msc(IT), Msc(CS), Degree, Diploma And Engineering Students</p>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- About -->
+                     <div class="col-lg-2 offset-lg-3 footer_col">
+                        <div>
+                           <div class="footer_title">Links</div>
+                           <ul class="footer_list">
+                              <li><a href="#">Courses</a></li>
+                              <li><a href="#">CodingJr</a></li>
+                              <li><a href="">Faculty</a></li>
+                              <li><a href="blog.html">Blog</a></li>
+                              <li><a href="#">Placement</a></li>
+                              <li><a href="contact.html">Contact</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                     <!-- Help & Support -->
+                     <div class="col-lg-2 footer_col">
+                        <div class="footer_title">Help & Support</div>
+                        <ul class="footer_list">
+                           <li><a href="#">Discussions</a></li>
+                           <li><a href="#">Troubleshooting</a></li>
+                           <li><a href="#">Duolingo FAQs</a></li>
+                           <li><a href="#">Schools FAQs</a></li>
+                           <li><a href="#">Duolingo English Test FAQs</a></li>
+                           <li><a href="#">Status</a></li>
+                        </ul>
+                     </div>
+                     <!-- Privacy -->
+                     <div class="col-lg-2 footer_col clearfix">
+                        <div>
+                           <div class="footer_title">Privacy & Terms</div>
+                           <ul class="footer_list">
+                              <li><a href="#">Community Guidelines</a></li>
+                              <li><a href="#">Terms</a></li>
+                              <li><a href="#">Brand Guidelines</a></li>
+                              <li><a href="#">Privacy</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="container-fluid px-5 py-3" style="background-color: #d7d6df;">
+               <div class="row">
+                  <div class="col-md-3 ">
+                     <a href="https://ahmedabad.codingjr.online/ " target="_blank"><img style="max-width: 140px;  height: auto;"src="https://ahmedabad.codingjr.online/uploads/system/logo-dark.png" alt="#"></a>
+                  </div>
+                  <div class="col-md-3">
+                     <p class="text-primary">
+                        Standard: 5 to 12 <br> coding training center
+                     </p>
+                  </div>
+                  <div class="col-md-3">
+                     <a href="https://codingprofessional.org/ " target="_blank">
+                     <img style="max-width: 230px;height: 41px;"src="https://codingprofessional.org/uploads/system/logo-dark.png" alt="#">
+                     </a>
+                  </div>
+                  <div class="col-md-3">
+                     <p class="text-primary">
+                        College Live Project Training <br> Coding Training Center
+                     </p>
+                  </div>
+               </div>
+            </div>
+      </div>
+      <div class="copyright">
+      <div class="container">
+      <div class="row">
+      <div class="col">
+      <div class="copyright_content d-flex flex-md-row flex-column align-items-md-center align-items-start justify-content-start">
+      <div class="cr" style="color: white;">
+      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+      Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved <a href="http://talentitsolutions.in" target="_blank">Talent IT Solutions</a> &amp; Designed and Developed by Talent IT Solutions.
+      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+      </div>
+      <div class="cr_right ml-md-auto" >
+      <div class="footer_social" >
+      <span class="cr_social_title">follow us</span>
+      <ul>
+      <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+      <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+      <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+      </ul>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </footer>
+      </div>
+      <script src="js/jquery-3.2.1.min.js"></script>
+      <script src="styles/bootstrap4/popper.js"></script>
+      <script src="styles/bootstrap4/bootstrap.min.js"></script>
+      <script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+      <script src="plugins/easing/easing.js"></script>
+      <script src="plugins/parallax-js-master/parallax.min.js"></script>
+      <script src="plugins/progressbar/progressbar.min.js"></script>
+      <script src="js/course.js"></script>
+   </body>
+</html>

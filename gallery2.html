@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Talent Computer</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Talent Computer">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+    <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+    <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+    <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/responsive.css">
+
+<style>
+.col-text {
+  height:20em;
+}
+.grid-flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  flex-direction: row; 
+  -webkit-flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+}
+.col {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+.col-left {
+  -webkit-box-ordinal-group:-1;
+  -webkit-order: -1;
+  -ms-flex-order: -1;
+  order: -1;
+}
+.col-text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Aligner-item {
+  width: 60%;
+}
+.col-image {
+  background-size: cover;
+  background-position:center center;
+}
+
+@media (max-width: 640px) {
+  .grid-flex {
+    height: 40em;
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    flex-direction: column; 
+   }
+  .col {
+    order:vertical;
+  }
+  .col-left {
+    -webkit-box-ordinal-group:0;
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+  }
+  .col-text div p {
+    padding: 1em;
+  }
+  .Aligner-item {
+    width: 90%;
+  }
+}
+
+
+
+   </style>
+  </head>
+  <body>
+    <main class="container">
+        <div class="center">
+      <h1 style="text-align: center; ">Gallery</h1>
+    </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+    </p>
+  <br>
+  &nbsp;
+
+
+<!--Griglia alternata testo e immagine, resposive con flexbox.-->
+<section>
+  <div class="grid-flex"  >
+   
+    <div class="col-lg-3  " >
+     <a href="https://www.instagram.com/p/CZQz-csohoO/" target="_blank">
+            <img style="width: 255px"src="https://scontent.famd4-1.fna.fbcdn.net/v/t39.30808-6/272710875_1854897844699175_3051468830874889227_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=730e14&_nc_ohc=NptTB5IRiq0AX8Enj_S&_nc_ht=scontent.famd4-1.fna&oh=00_AT_sENYY1KrZozLt1S0F2058tY4z-cjGg32Ti8ONBM5xZQ&oe=61F8A03F" alt="#"></a>
+    </div>
+     
+    <div class="col-lg-3 " >
+      <div >
+        <p style="text-align: justify;margin-top: 0px;">Address:211, 2nd Floor, Devraj Mall, Nr.Haveli India Colony Road, 
+          Thakkarbapa Nagar Rd, Ahmedabad, Gujarat 380024 
+          <cite>-  Angelou</cite>
+        </p>
+       <p style="color: blue">#computer #classes  #course #webdesigner #webdesign 
+         
+        </p>
+      </div>
+    </div>
+    <div class="col-lg-3  " >
+     <a href="https://www.instagram.com/p/CZQz-csohoO/" target="_blank">
+            <img style="width: 255px"src="https://scontent.famd4-1.fna.fbcdn.net/v/t39.30808-6/272710875_1854897844699175_3051468830874889227_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=730e14&_nc_ohc=NptTB5IRiq0AX8Enj_S&_nc_ht=scontent.famd4-1.fna&oh=00_AT_sENYY1KrZozLt1S0F2058tY4z-cjGg32Ti8ONBM5xZQ&oe=61F8A03F" alt="#"></a>
+    </div>
+  <div class="col-lg-3 "  >
+      <div >
+        <p style="text-align: justify;margin-top: 0px;">Address:211, 2nd Floor, Devraj Mall, Nr.Haveli India Colony Road, 
+          Thakkarbapa Nagar Rd, Ahmedabad, Gujarat 380024 
+          <cite>-  Angelou</cite>
+        </p>
+       <p style="color: blue">#computer #classes  #course #webdesigner #webdesign 
+         
+        </p>
+      </div>
+    </div>
+
+     </div>
+
+  
+  <div class="grid-flex" style=" margin-top: 60px;">
+    <div class="col-lg-3 col-image "  style="background-image: url(https://scontent.famd4-1.fna.fbcdn.net/v/t39.30808-6/272739281_1855609277961365_6283399761498374693_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=730e14&_nc_ohc=PnMLr8fZ09oAX81L8Ds&_nc_ht=scontent.famd4-1.fna&oh=00_AT8zxHhHU_977Gwcy091sZA9FN_CCtKoW_JxKMMVE_t6RA&oe=61F90AAF);">
+    </div>
+    <div class="col-lg-3 col-text "  style="right: 40px;">
+      <div class="Aligner-item">
+        <p style="text-align: justify-all;margin-top: 43px;">Address:211, 2nd Floor, Devraj Mall, Nr.Haveli India Colony Road, 
+          Thakkarbapa Nagar Rd, Ahmedabad, Gujarat 380024 
+          <cite>-  Angelou</cite>
+        </p>
+       <p style="color: blue">#computer #classes  #course #webdesigner #webdesign 
+         
+        </p>
+      </div>
+    </div>
+   <div class="col-lg-3 col-image" style="background-image: url(https://scontent.famd4-1.fna.fbcdn.net/v/t39.30808-6/272710875_1854897844699175_3051468830874889227_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=730e14&_nc_ohc=NptTB5IRiq0AX8Enj_S&_nc_ht=scontent.famd4-1.fna&oh=00_AT_sENYY1KrZozLt1S0F2058tY4z-cjGg32Ti8ONBM5xZQ&oe=61F8A03F);">
+    </div>
+   <div class="col-lg-3 col-text" style="right: 40px;">
+       <div class="Aligner-item">
+        <p style="text-align: justify-all;margin-top: 43px;">Address:211, 2nd Floor, Devraj Mall, Nr.Haveli India Colony Road, 
+          Thakkarbapa Nagar Rd, Ahmedabad, Gujarat 380024 
+          <cite>-  Angelou</cite>
+        </p>
+       <p style="color: blue"> #computer #classes  #course #webdesigner #webdesign  
+       
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  
+</section>
+
+</main>
+  </body>
+  <style type="text/css">
+  </style>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Talent Computer</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Talent Computer">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+    <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+    <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+    <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/responsive.css">
+
+<style>
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --full-width: 100%;
+  --max-width: 62.5rem;
+  --min-width: 22.5rem;
+  --flex-flow: 30rem;
+  --space: 1rem;
+  --conditional-space: clamp(0px, (30rem - 100%) * 999, 1rem);
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(
+    45deg,
+    hsl(236, 100%, 80%, 0.4),
+    rgba(205, 155, 225, 0.3)
+  );
+}
+
+.container {
+  width: clamp(var(--flex-flow), 95%, var(--max-width));
+  padding-block: var(--space);
+  min-width: var(--min-width);
+}
+
+.container__flex-flow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space);
+  margin-inline: var(--conditional-space);
+}
+
+.container__flex-flow > * {
+  flex-grow: 1;
+  flex-basis: calc((var(--flex-flow) - var(--full-width)) * 999);
+}
+
+.card {
+  display: flex;
+  min-width: 12rem;
+  overflow: hidden;
+  border-radius: clamp(0px, (40vw - var(--full-width)), var(--space));
+  box-shadow: rgb(40, 40, 40, 0.1) 0px 2px 3px, rgb(20, 20, 20, 0.2) 0px 5px 8px,
+    rgb(0, 0, 0, 0.25) 0px 10px 12px;
+}
+
+.card > img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  /* aspect-ratio: 16 / 9; */
+  transition: transform 700ms ease;
+}
+
+/*.card:hover img {
+  transform: scale(1.2);
+}*/
+
+
+
+   </style>
+  </head>
+  <body>
+    <main class="container">
+        <div class="center">
+      <h1 style="text-align: center; ">Gallery</h1>
+    </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+  <div class="container__flex-flow">
+
+
+    <div class="card">
+      <img src="https://scontent.famd4-1.fna.fbcdn.net/v/t39.30808-6/272739281_1855609277961365_6283399761498374693_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=730e14&_nc_ohc=PnMLr8fZ09oAX81L8Ds&_nc_ht=scontent.famd4-1.fna&oh=00_AT8zxHhHU_977Gwcy091sZA9FN_CCtKoW_JxKMMVE_t6RA&oe=61F90AAF" alt="">
+    </div>
+    <div class="card">
+      <img src="https://scontent.famd4-1.fna.fbcdn.net/v/t39.30808-6/272710875_1854897844699175_3051468830874889227_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=730e14&_nc_ohc=NptTB5IRiq0AX8Enj_S&_nc_ht=scontent.famd4-1.fna&oh=00_AT_sENYY1KrZozLt1S0F2058tY4z-cjGg32Ti8ONBM5xZQ&oe=61F8A03F" alt="">
+    </div>
+    <div class="card">
+      <img src="https://scontent.famd4-1.fna.fbcdn.net/v/t39.30808-6/272205836_1851099621745664_5838278315350681095_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=730e14&_nc_ohc=IcqFGVybkl4AX_1SfXQ&_nc_ht=scontent.famd4-1.fna&oh=00_AT9iOo4YCXBdyBoJ_WNUmhBMWVBcAQmz6VNZ28yx-t4clw&oe=61F97E53" alt="">
+    </div>
+    <div class="card">
+      <img src="https://scontent.famd4-1.fna.fbcdn.net/v/t39.30808-6/272162451_1850319915156968_7581310257356740489_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=730e14&_nc_ohc=cmM7Ef_ZC68AX9OlsCw&tn=3DArZ7cCR41RN7N8&_nc_ht=scontent.famd4-1.fna&oh=00_AT_xRd10edRYfPeyUUwZ4nxskCbhstDVDUbeEa-10R4S0w&oe=61F8B398" alt="">
+    </div>
+    <div class="card">
+      <img src="https://cdn.pixabay.com/photo/2017/11/27/21/31/computer-2982270_960_720.jpg" alt="">
+    </div>
+    <div class="card">
+      <img src="https://cdn.pixabay.com/photo/2015/06/24/15/45/hands-820272_960_720.jpg" alt="">
+    </div>
+    <div class="card">
+      <img src="https://cdn.pixabay.com/photo/2016/06/28/05/10/laptop-1483974_960_720.jpg" alt="">
+    </div>
+    <div class="card">
+      <img src="https://cdn.pixabay.com/photo/2016/02/17/15/37/laptop-1205256_960_720.jpg" alt="">
+    </div>
+    <div class="card">
+      <img src="https://cdn.pixabay.com/photo/2015/06/24/16/36/office-820390_960_720.jpg" alt="">
+    </div>
+    <div class="card">
+      <img src="https://cdn.pixabay.com/photo/2017/10/10/21/47/laptop-2838921_960_720.jpg" alt="">
+    </div>
+    <div class="card">
+      <img src="https://cdn.pixabay.com/photo/2017/06/23/11/49/laptop-2434393_960_720.jpg" alt="">
+    </div>
+    <div class="card">
+      <img src="https://cdn.pixabay.com/photo/2015/09/04/23/28/wordpress-923188_960_720.jpg" alt="">
+    </div>
+  </div>
+</main>
+  </body>
+  <style type="text/css">
+  </style>
+</html>

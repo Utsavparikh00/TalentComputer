@@ -1,0 +1,1505 @@
+
+         <div class="events">
+            <div class="container">
+               <div class="row">
+                  <div class="col">
+                     <h2 class="section_title text-center">Upcoming Events</h2>
+                  </div>
+               </div>
+               <div class="row events_row">
+                  <div class="col-lg-4 event_col">
+                     <div class="event">
+                        <div class="event_image"><img src="images/event_1.jpg" alt=""></div>
+                        <div class="event_date d-flex flex-column align-items-center justify-content-center">
+                           <div class="event_day">26</div>
+                           <div class="event_month">aug</div>
+                        </div>
+                        <div class="event_body d-flex flex-row align-items-center justify-content-start">
+                           <div class="event_title"><a href="#">Networking Day</a></div>
+                           <div class="event_tag ml-auto">Free</div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 event_col">
+                     <div class="event">
+                        <div class="event_image"><img src="images/event_2.jpg" alt=""></div>
+                        <div class="event_date d-flex flex-column align-items-center justify-content-center">
+                           <div class="event_day">26</div>
+                           <div class="event_month">aug</div>
+                        </div>
+                        <div class="event_body d-flex flex-row align-items-center justify-content-start">
+                           <div class="event_title"><a href="#">Networking Day</a></div>
+                           <div class="event_tag ml-auto">Free</div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 event_col">
+                     <div class="event">
+                        <div class="event_image"><img src="images/event_3.jpg" alt=""></div>
+                        <div class="event_date d-flex flex-column align-items-center justify-content-center">
+                           <div class="event_day">26</div>
+                           <div class="event_month">aug</div>
+                        </div>
+                        <div class="event_body d-flex flex-row align-items-center justify-content-start">
+                           <div class="event_title"><a href="#">Networking Day</a></div>
+                           <div class="event_tag ml-auto">Free</div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Talent Computer</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Talent Computer">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+<link rel="stylesheet" type="text/css" href="styles/main_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/responsive.css">
+
+<style type="text/css">
+	@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/**{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+*/
+/*body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1D212B;
+}
+*/
+
+
+ul.slides {
+    display: block;
+    position: relative;
+    height: 600px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style: none;
+}
+
+.slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+ul.slides input {
+    display: none; 
+}
+
+
+.slide-container { 
+    display: block; 
+}
+
+.slide-image {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    opacity: 0;
+    transition: all .7s ease-in-out;
+}   
+
+.slide-image img {
+    width: auto;
+    min-width: 100%;
+    height: 100%;
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    font-size: 100px;
+    line-height: 600px;
+    color: #fff;
+}
+
+.carousel-controls label {
+    display: none;
+    position: absolute;
+    padding: 0 20px;
+    opacity: 0;
+    transition: opacity .2s;
+    cursor: pointer;
+}
+
+.slide-image:hover + .carousel-controls label{
+    opacity: 0.5;
+}
+
+.carousel-controls label:hover {
+    opacity: 1;
+}
+
+.carousel-controls .prev-slide {
+    width: 49%;
+    text-align: left;
+    left: 0;
+}
+
+.carousel-controls .next-slide {
+    width: 49%;
+    text-align: right;
+    right: 0;
+}
+
+.carousel-dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    z-index: 1;
+    text-align: center;
+}
+
+.carousel-dots .carousel-dot {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.5;
+    margin: 10px;
+}
+
+input:checked + .slide-container .slide-image {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .carousel-controls label {
+     display: block; 
+}
+
+input#img-1:checked ~ .carousel-dots label#img-dot-1,
+input#img-2:checked ~ .carousel-dots label#img-dot-2,
+input#img-3:checked ~ .carousel-dots label#img-dot-3,
+input#img-4:checked ~ .carousel-dots label#img-dot-4,
+input#img-5:checked ~ .carousel-dots label#img-dot-5,
+input#img-6:checked ~ .carousel-dots label#img-dot-6 {
+	opacity: 1;
+}
+
+
+input:checked + .slide-container .nav label { display: block; }
+
+ 
+/*header css*/
+   .top_bar_phone{
+	   border-radius: 60px;
+	   border: 1px solid #010101;
+   }
+.top_bar_phone1
+{
+	   border-radius: 60px;
+	    border: 1px solid #010101;
+
+   }
+.bg-edit-orange-color{
+background-image: linear-gradient(to right, #f48f20, #f13225);
+}
+.dropdown-menu.show{
+	padding: 20px 0;
+	top: 13px !important;
+    left: 6px !important;
+    z-index: 10 !important;
+
+}
+
+   /*///////////////////////////////////////////*/
+
+</style>
+</head>
+<body>
+
+<div class="super_container">
+
+
+	<!-- Header -->
+
+<header class="header">		
+		<!-- Top Bar -->
+		<div class="top_bar">
+			<div class="top_bar_container">
+				<div class="container-fluid">
+					<div class="row">
+
+    					<div class="col col-md-6">
+							<div class="logo_container mr-auto" style="position: relative;">
+								<a href="#" style="display: block;margin: 0 auto;">
+									<!-- <div class="logo_text">Talent Computer </div> -->
+									 <img src="images/img/talentlogo.png" alt="" style="height: 70px;position: absolute;top: 20px;left: 80px;"> </a>
+							</div>
+						</div>
+						<div class="col col-md-6">
+							<div class="top_bar_content d-flex flex-row align-items-center justify-content-start" style="margin-left: -35px;">
+								<div class="ml-2 d-flex align-items-center px-3 py-2 text-dark top_bar_phone bg"><i class="mr-2 fa fa-whatsapp text-success" aria-hidden="true"></i>+91 86903 46112</div>
+								<div class="ml-2  d-flex align-items-center ml-1 px-3 py-2 text-dark top_bar_phone"><i class="mr-2 fa fa-download text-primary" aria-hidden="true"></i><span class="top_bar_title"> Download Syllabus</span></div>
+							<div class=" bg-edit-orange-color ml-2 d-flex align-items-center ml-1 px-3 py-2 text-white top_bar_phone1"><i class="mr-2 fa fa-envelope-open-o" aria-hidden="true"></i>
+								<span class="top_bar_title"> FREE Demo Lecture</span>
+</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>				
+		</div>
+
+		<!-- Header Content -->
+		<div class="header_container">
+			<div class="container">
+				<div class="row">
+					<div class="col" style="padding: 0;margin: 0;">
+						<div class="header_content d-flex flex-row align-items-center justify-content-start" style="padding-bottom: 12px;padding-top: -44px !important;margin-top: 0;">
+							<div class="logo_container mr-auto">
+								<a href="#">
+									<!-- <div class="logo_text">Talent Computer </div> -->
+								</a>
+							</div>
+							<nav class="main_nav_contaner">
+								<ul class="main_nav  " style="margin-left: 455px;">
+									
+									 <!-- <li><a href="instructors.html">Courses</a></li> -->
+										<li class="nav-item dropdown">
+										    <a class="nav-link dropdown-toggle" href="#" id="courseDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Course</a>
+										    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="courseDropdown" style="margin-top: -3px">
+										     <!-- <a class="dropdown-item" href="course.html">What we do</a> -->
+										     <!-- <a class="dropdown-item" href="#">How we fit your needs</a> -->
+										     <div class="dropdown"></div>
+										     <div class="d-md-flex align-items-start justify-content-start">
+										      <div>   
+										       <div class="dropdown-header"><b>Programming Course<hr class="hr_header"></b></div>
+										       <a class="dropdown-item" href="#">
+										       	<img class ="icon_head"src="icon/header/python.png" >Python Programming</a>
+										       <a class="dropdown-item" href="#">
+										       	<img class ="icon_head"src="icon/header/java.png" >Java Programming</a>
+										       <a class="dropdown-item" href="#"><img class ="icon_head"src="icon/header/c.png" >C,C++  Programming</a>
+										       <a class="dropdown-item" href="#"> <img class ="icon_head"src="icon/header/html_css.png" >Web Programming</a>
+										       <a class="dropdown-item" href="#"> <img class ="icon_head"src="icon/header/android.png" >Android Programming</a>
+										       <a class="dropdown-item" href="#"><img class ="icon_head"src="icon/header/php.png" >PHP Programming</a>
+										       <a class="dropdown-item" href="#"><img class ="icon_head"src="icon/header/.net.png" >.NET Programming</a>
+										      </div>
+
+										      <div>
+										       <div class="dropdown-header"><b>Designing Course<hr class="hr_header"></b></div>
+										       <a class="dropdown-item" href="#"><img class ="icon_head"src="icon/header/graphics.png" >Graphics Design </a>
+										       <a class="dropdown-item" href="#"><img class ="icon_head"src="icon/header/web_develop.png" >Web Development</a>
+										       <br>
+										       	<div class="dropdown-header"><b>Course <hr class="hr_header"></b></div>
+										       <a class="dropdown-item" href="#"> <img class ="icon_head"src="icon/header/cyber_security.png" >  Cyber Security  </a>
+										       <a class="dropdown-item" href="#"><img class ="icon_head"src="icon/header/data_science.png" >Data Science</a>
+
+										      </div>
+
+
+										   
+
+										     
+										          <div>
+										       <div class="dropdown-header"><b>Live Project Training<hr class="hr_header"></b></div>
+										       <a class="dropdown-item" href="#"><img class ="icon_head"src="icon/header/php.png" >PHP Training Course</a>
+										       <a class="dropdown-item" href="#">
+										       	<img class ="icon_head"src="icon/header/python.png" >Python Programming</a>
+										       <a class="dropdown-item" href="#"><img class ="icon_head"src="icon/header/java.png" >Java Training Course</a>
+										       <a class="dropdown-item" href="#"><img class ="icon_head"src="icon/header/.net.png" >
+										       ASP.NET Training Course</a>
+										       <a class="dropdown-item" href="#"><img class ="icon_head"src="icon/header/android.png" >Android Training Course</a>
+										       <a class="dropdown-item" href="#"><img class ="icon_head"src="icon/header/html_css.png" >Web Designing Training Course</a>
+										       <a class="dropdown-item" href="#"><img class ="icon_head"src="icon/header/c.png" >C,C++ Training Course</a>
+										      
+										      </div>
+
+										         <div>
+										       <div class="dropdown-header"><b>Certificate Course<hr class="hr_header"></b></div>
+										       <a class="dropdown-item" href="#"><img class ="icon_head"src="icon/header/ccc.png" >CCC Certificate Course</a>
+										       <a class="dropdown-item" href="#"><img class ="icon_head"src="icon/header/digital_marketing.png" >Diploma in Digital Marketing</a>
+
+										       <a class="dropdown-item" href="#"><img class ="icon_head"src="icon/header/computer_application.png" >DCA (Diploma in computer Application)</a>
+										      <a class="dropdown-item" href="#"><img class ="icon_head"src="icon/header/training.png" >Certificate in Teaching Training</a>
+										      <a class="dropdown-item" href="#"><img class ="icon_head"src="icon/header/diploma.png" >Diploma in Computer Expert</a>
+										    
+										      <a class="dropdown-item" href="#"><img class ="icon_head"src="icon/header/computer.png" >Basic Computer</a>
+										      </div>
+
+ 												<div>
+										       <div class="dropdown-header"><b>Accounting Course<hr class="hr_header"></b></div>
+										       <a class="dropdown-item" href="#">
+										       	<img class ="icon_head"src="icon/header/tally.png" >Tally ERP</a>
+										       <a class="dropdown-item" href="#">	<img class ="icon_head"src="icon/header/excel.png" >Advance Excel</a>
+										       <a class="dropdown-item" href="#"><img class ="icon_head"src="icon/header/finnacial.png" >Finnacial Software</a>
+										      
+										      </div>
+										     </div>
+										    </div>
+										   </li> 
+
+
+									<li><a href="#">CodingJr</a></li>
+									<li><a href="">Faculty</a></li>
+									 <li><a href="blog.html">Blog</a></li>
+									<li><a href="#">Placement</a></li>
+									<li><a href="contact.html">Contact</a></li>
+								</ul>
+							</nav>
+							<div class="header_content_right ml-auto text-right">
+								<!-- <div class="header_search">
+									<div class="search_form_container">
+										<form action="#" id="search_form" class="search_form trans_400">
+											<input type="search" class="header_search_input trans_400" placeholder="Type for Search" required="required">
+											<div class="search_button">
+												<i class="fa fa-search" aria-hidden="true"></i>
+											</div>
+										</form>
+									</div>
+								</div> -->
+
+								<!-- Hamburger -->
+
+								<!-- <div class="user"><a href="#"><i class="fa fa-user" aria-hidden="true"></i></a></div> -->
+								<!-- <div>
+									<img src="images/img/talentlogo.png" width="150px" class="d-lg-none d-md-none d-sm-block">
+								</div> -->
+								<div class="hamburger menu_mm">
+
+									<i class="fa fa-bars menu_mm" aria-hidden="true"></i>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+</header>
+<div class="d-flex fixed-bottom">
+  <div class="bg-success w-100  fixed-call-now-btn d-none text-center">
+ 
+   <i class="fa fa-2x fa-whatsapp text-white"></i>
+ <!--    <p class="text-white">Call Now : <span> +91 86903 46112 </span></p> -->
+  </div>
+
+<div class="bg-primary w-100 fixed-call-now-btn d-none text-center">
+  	<!-- <i class="fa fa-phone" aria-hidden="true"></i> -->
+   <i class="fa fa-2x fa-phone text-white"></i>
+
+    <!-- <p class="text-white">Call Now : <span> +91 86903 46112 </span></p> -->
+  </div>
+</div>
+
+
+
+	<!-- Menu -->
+
+	<div class="menu d-flex flex-column align-items-end justify-content-start text-right menu_mm trans_400">
+		<div class="menu_close_container"><div class="menu_close"><div></div><div></div></div></div>
+		<div class="search">
+			<form action="#" class="header_search_form menu_mm">
+				<input type="search" class="search_input menu_mm" placeholder="Search" required="required">
+				<button class="header_search_button d-flex flex-column align-items-center justify-content-center menu_mm">
+					<i class="fa fa-search menu_mm" aria-hidden="true"></i>
+				</button>
+			</form>
+		</div>
+		<nav class="menu_nav">
+			<ul class="menu_mm">
+				<li class="active"><a href="index.html">Home</a></li>
+				<li><a href="courses.html">About Us</a></li>
+				<li><a href="instructors.html">Courses</a></li>
+				<li><a href="#">CodingJr</a></li>
+				<li><a href="blog.html">Faculty</a></li>
+				<!-- <li><a href="contact.html">Admission</a></li> -->
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+		<div class="menu_extra">
+			<div class="menu_phone"><span class="menu_title">phone:</span>+91 86903 46112</div>
+			<div class="menu_social">
+				<span class="menu_title">follow us</span>
+				<ul>
+					<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Home -->
+ 	
+
+
+	
+
+   <div>
+  <div class="carousel">
+    <ul class="slides">
+      <input type="radio" name="radio-buttons" id="img-1" checked />
+      <li class="slide-container">
+        <div class="slide-image">
+          <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Timisoara_-_Regional_Business_Centre.jpg">
+ -->
+  <img src="images/Slider1.jpg">
+        </div>
+        <div class="carousel-controls">
+          <label for="img-3" class="prev-slide">
+         
+          </label>
+          <label for="img-2" class="next-slide">
+           
+          </label>
+        </div>
+      </li>
+      <input type="radio" name="radio-buttons" id="img-2" />
+      <li class="slide-container">
+        <div class="slide-image">
+          <img src="images/Slider2.jpg">
+        </div>
+        <div class="carousel-controls">
+          <label for="img-1" class="prev-slide">
+            <span>&lsaquo;</span>
+          </label>
+          <label for="img-3" class="next-slide">
+            <span>&rsaquo;</span>
+          </label>
+        </div>
+      </li>
+      <input type="radio" name="radio-buttons" id="img-3" />
+      <li class="slide-container">
+        <div class="slide-image">
+          <img src="images/Slider3.jpg">
+        </div>
+        <div class="carousel-controls">
+          <label for="img-2" class="prev-slide">
+            <span>&lsaquo;</span>
+          </label>
+          <label for="img-1" class="next-slide">
+            <span>&rsaquo;</span>
+          </label>
+        </div>
+      </li>
+      <div class="carousel-dots">
+        <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
+        <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
+        <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
+      </div>
+    </ul>
+  </div>
+</div>   
+      
+     
+      
+<!-- <div class="navigation">
+        <div class="btn active"></div>
+        <div class="btn"></div>
+         <div class="btn"></div>
+	</div>
+    </div>  -->
+	<!-- Language -->
+
+	<!-- <div class="language ">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="language_slider_container">
+						
+						
+
+						<div class="owl-carousel owl-theme language_slider">
+
+							
+							<div class="owl-item language_item">
+								<a href="#">
+									<div class="flag"><img src="icon/HTML.png" alt=""></div>
+									<div class="lang_name">HTML</div>
+								</a>
+							</div>
+
+							
+							<div class="owl-item language_item">
+								<a href="#">
+									<div class="flag"><img src="icon/CSS.png" alt="" ></div>
+									<div class="lang_name">CSS</div>
+								</a>
+							</div>
+
+							
+							<div class="owl-item language_item">
+								<a href="#">
+									<div class="flag"><img src="icon/C.png" alt=""></div>
+									<div class="lang_name">C</div>
+								</a>
+							</div>
+
+							
+							<div class="owl-item language_item">
+								<a href="#">
+									<div class="flag"><img src="icon/C++.png" alt=""></div>
+									<div class="lang_name">C++</div>
+								</a>
+							</div>
+
+							
+							<div class="owl-item language_item">
+								<a href="#">
+									<div class="flag"><img src="icon/.NET.png" alt=""></div>
+									<div class="lang_name">.NET</div>
+								</a>
+							</div>
+
+							
+							<div class="owl-item language_item">
+								<a href="#">
+									<div class="flag"><img src="icon/C_SHARP.png" alt=""></div>
+									<div class="lang_name">C#</div>
+								</a>
+							</div>
+
+							<div class="owl-item language_item">
+								<a href="#">
+									<div class="flag"><img src="icon/JAVA.png" alt=""></div>
+									<div class="lang_name">Java</div>
+								</a>
+							</div>
+
+							
+							<div class="owl-item language_item">
+								<a href="#">
+									<div class="flag"><img src="icon/PHP.png" alt="">
+									</div>
+									<div class="lang_name">PHP</div>
+								</a>
+							</div>
+
+							
+							<div class="owl-item language_item">
+								<a href="#">
+									<div class="flag"><img src="icon/PYTHON.png" alt=""></div>
+									<div class="lang_name">Python</div>
+								</a>
+							</div>
+							<div class="owl-item language_item">
+								<a href="#">
+									<div class="flag"><img src="icon/ANROID.png" alt=""></div>
+									<div class="lang_name">Anroid</div>
+								</a>
+							</div>
+
+							<div class="owl-item language_item">
+								<a href="#">
+									<div class="flag"><img src="icon/IOS.png" alt=""></div>
+									<div class="lang_name">ios-App</div>
+								</a>
+							</div>
+
+						</div>
+
+						<div class="lang_nav lang_prev"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
+						<div class="lang_nav lang_next"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> -->
+
+	<!-- Courses -->
+
+	<div class="courses ">
+		<div class="courses_background"></div>
+		<div class="container wrapper zoom-effect-container">
+			<div class="row">
+				<div class="col">
+					<h2 class="section_title text-center">Popular Online Courses</h2>
+				</div>
+			</div>
+
+			<div class="row courses_row">
+
+				<!-- Course -->
+				<div class="col-lg-4 course_col image-card">
+					<div class="course">
+						<div class="course_image"><img class ="w-100" src="images/img/web design.png" alt=""></div>
+						<div class="course_body">
+							<div class="course_title"><a href="web_design.html">Web Designing</a></div>
+							<div class="course_info">
+								<ul>
+									<li><a href="instructors.html">Utsav Parikh</a></li>
+									<!-- <li><a href="#">English</a></li> -->
+								</ul>
+							</div>
+							<div class="course_text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce enim nulla.</p>
+							</div>
+						</div>
+					<div class="course_footer bg-primary d-flex flex-row align-items-center justify-content-center">
+							<!-- <div class="course_students"><i class="fa fa-user" aria-hidden="true"></i><span>10</span></div>
+							<div class="course_rating ml-auto"><i class="fa fa-star" aria-hidden="true"></i><span>4,5</span></div> -->
+							<div ><a class="text-center text-white" href="#">Read more</a></div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Course -->
+				<div class="col-lg-4 course_col">
+					<div class="course">
+						<div class="course_image"><img class ="w-100" src="images/img/android.jpg" alt=""></div>
+						<div class="course_body">
+							<div class="course_title"><a href="Anroid_training.html">Android Training</a></div>
+							<div class="course_info">
+								<ul>
+									<li><a href="instructors.html">Sarah Parker</a></li>
+									<!-- <li><a href="#">Spanish</a></li> -->
+								</ul>
+							</div>
+							<div class="course_text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce enim nulla. 
+								</p>
+							</div>
+						</div>
+					<div class="course_footer bg-primary d-flex flex-row align-items-center justify-content-center">
+							<!-- <div class="course_students"><i class="fa fa-user" aria-hidden="true"></i><span>10</span></div>
+							<div class="course_rating ml-auto"><i class="fa fa-star" aria-hidden="true"></i><span>4,5</span></div> -->
+							<div ><a class="text-center text-white" href="#">Read more</a></div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Course -->
+				<div class="col-lg-4 course_col  ">
+					<div class="course">
+						<div class="course_image "><img class ="w-100"src="images/img/java.jpg" alt=""></div>
+						<div class="course_body">
+							<div class="course_title"><a href="Java_training.html">JAVA  Training</a></div>
+							<div class="course_info">
+								<ul>
+									<li><a href="Java_training.html">Sneh Parikh</a></li>
+									<!-- <li><a href="#">English</a></li> -->
+								</ul>
+							</div>
+							<div class="course_text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce enim nulla. <!-- Java is a very high level language . Java is general purpose programming language with a number of feature, using that we can create the online games site, chat, etc. --></p>
+							</div>
+						</div>
+						<div class="course_footer bg-primary d-flex flex-row align-items-center justify-content-center">
+							<!-- <div class="course_students"><i class="fa fa-user" aria-hidden="true"></i><span>10</span></div>
+							<div class="course_rating ml-auto"><i class="fa fa-star" aria-hidden="true"></i><span>4,5</span></div> -->
+							<div ><a class="text-center text-white" href="#">Read more</a></div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<!-- second row -->
+
+			<div class="row courses_row">
+
+				<!-- Course -->
+				<div class="col-lg-4 course_col">
+					<div class="course">
+						<div class="course_image"><img class ="w-100" src="images/img/.net.jpg" alt=""></div>
+						<div class="course_body">
+							<div class="course_title"><a href="web_design.html">ASP.NET Training</a></div>
+							<div class="course_info">
+								<ul>
+									<li><a href="instructors.html">Utsav Parikh</a></li>
+									<!-- <li><a href="#">English</a></li> -->
+								</ul>
+							</div>
+							<div class="course_text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce enim nulla. 
+									<!-- Everyone is aware of Microsoft products. ASP. NET is a well known product of Microsoft, which is broadly used for web based applications.ASP.NET is a free web framework for building great websites. --></p>
+							</div>
+						</div>
+					<div class="course_footer bg-primary d-flex flex-row align-items-center justify-content-center">
+							<!-- <div class="course_students"><i class="fa fa-user" aria-hidden="true"></i><span>10</span></div>
+							<div class="course_rating ml-auto"><i class="fa fa-star" aria-hidden="true"></i><span>4,5</span></div> -->
+							<div ><a class="text-center text-white" href="#">Read more</a></div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Course -->
+				<div class="col-lg-4 course_col">
+					<div class="course">
+						<div class="course_image"><img class ="w-100" src="images/img/ccc.png" alt=""></div>
+						<div class="course_body">
+							<div class="course_title"><a href="course.html">CCC</a></div>
+							<div class="course_info">
+								<ul>
+									<li><a href="instructors.html">Sarah Parker</a></li>
+									<!-- <li><a href="#">Spanish</a></li> -->
+								</ul>
+							</div>
+							<div class="course_text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce enim nulla. <!-- The full form of CCC is Course on Computer Concepts.This course is designed to aim at imparting a basic level IT Literacy programme for the common man. --></p>
+							</div>
+						</div>
+					<div class="course_footer bg-primary d-flex flex-row align-items-center justify-content-center">
+							<!-- <div class="course_students"><i class="fa fa-user" aria-hidden="true"></i><span>10</span></div>
+							<div class="course_rating ml-auto"><i class="fa fa-star" aria-hidden="true"></i><span>4,5</span></div> -->
+							<div ><a class="text-center text-white" href="#">Read more</a></div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Course -->
+				<div class="col-lg-4 course_col">
+					<div class="course">
+						<div class="course_image"><img class ="w-100" src="images/img/php_tab.jpg" alt=""></div>
+						<div class="course_body">
+							<div class="course_title"><a href="Java_training.html">PHP Training</a></div>
+							<div class="course_info">
+								<ul>
+									<li><a href="Java_training.html">Sneh Parikh</a></li>
+									<!-- <li><a href="#">English</a></li> -->
+								</ul>
+							</div>
+							<div class="course_text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce enim nulla. <!-- PHP is the most well known language , PHP is famous for open source nature .PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages. --></p>
+							</div>
+						</div>
+					<div class="course_footer bg-primary d-flex flex-row align-items-center justify-content-center">
+							<!-- <div class="course_students"><i class="fa fa-user" aria-hidden="true"></i><span>10</span></div>
+							<div class="course_rating ml-auto"><i class="fa fa-star" aria-hidden="true"></i><span>4,5</span></div> -->
+							<div ><a class="text-center text-white" href="#">Read more</a></div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- Instructors -->
+
+	<div class="instructors">
+		<div class="instructors_background" style="background-image:url(images/instructors_background.png)"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<h2 class="section_title text-center">The Managing team in Town</h2>
+				</div>
+			</div>
+			<div class="row instructors_row">
+
+				<!-- Instructor -->
+				<div class="col-lg-3 instructor_col">
+					<div class="instructor text-center">
+						<div class="instructor_image_container">
+							<div class="instructor_image"><img src="icon/header/shiv_img.jpg" alt=""></div>
+						</div>
+						<div class="instructor_name"><!-- <a href="instructors.html">Mr.Shiv Maurya</a> -->
+							<a href="#">Mr.Shiv Maurya</a></div>
+						<div class="instructor_title">Director</div>
+						<div class="instructor_title">+91 97 123 66 222</div>
+						<div class="instructor_title">Talent IT Soltution</div>
+						<!-- <div class="instructor_text">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce enim nulla, mollis eu metus in, sagittis fringilla tortor.</p>
+						</div>
+						<div class="instructor_social">
+							<ul>
+								<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+								<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+							</ul>
+						</div> -->
+					</div>
+				</div>
+
+				<!-- Instructor -->
+				<div class="col-lg-3 instructor_col">
+					<div class="instructor text-center">
+						<div class="instructor_image_container">
+							<div class="instructor_image"><img src="icon/header/ketan_img.jpg" alt=""></div>
+						</div>
+						<div class="instructor_name"><a href="#">Mr.Ketan Panchal</a></div>
+						<div class="instructor_title">Managing Director</div>
+						<div class="instructor_title">+91 86 903 46 112</div>
+						<div class="instructor_title">Talent IT Soltution</div>
+					<!-- 	<div class="instructor_text">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce enim nulla, mollis eu metus in, sagittis fringilla tortor.</p>
+						</div>
+						<div class="instructor_social">
+							<ul>
+								<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+								<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+							</ul>
+						</div> -->
+					</div>
+				</div>
+
+
+				<div class="col-lg-3 instructor_col">
+					<div class="instructor text-center">
+						<div class="instructor_image_container">
+							<div class="instructor_image"><img src="icon/header/utsav_img.webp" alt=""></div>
+						</div>
+						<div class="instructor_name"><a href="#">Mr.Utsav Parikh</a></div>
+						<div class="instructor_title">Software Developer</div>
+						<div class="instructor_title">+91 70 431 08 606</div>
+						<div class="instructor_title">Talent IT Soltution</div>
+					<!-- 	<div class="instructor_text">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce enim nulla, mollis eu metus in, sagittis fringilla tortor.</p>
+						</div>
+						<div class="instructor_social">
+							<ul>
+								<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+								<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+							</ul>
+						</div> -->
+					</div>
+				</div>
+				<div class="col-lg-3 instructor_col">
+					<div class="instructor text-center">
+						<div class="instructor_image_container">
+							<div class="instructor_image"><img src="icon/header/sneh_img.jpg" alt=""></div>
+						</div>
+						<div class="instructor_name"><a href="#">Mr.Sneh Parikh</a></div>
+						<div class="instructor_title">Software Developer</div>
+						<div class="instructor_title">+91 75 670 19 408</div>
+						<div class="instructor_title">Talent IT Soltution</div>
+					<!-- 	<div class="instructor_text">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce enim nulla, mollis eu metus in, sagittis fringilla tortor.</p>
+						</div>
+						<div class="instructor_social">
+							<ul>
+								<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+								<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+							</ul>
+						</div> -->
+					</div>
+				</div>
+				<!-- Instructor -->
+			<!-- 	<div class="col-lg-4 instructor_col">
+					<div class="instructor text-center">
+						<div class="instructor_image_container">
+							<div class="instructor_image"><img src="icon/header/sneh_img.jpg" alt=""></div>
+						</div>
+						<div class="instructor_name"><a href="instructors.html">Sneh Parikh</a></div>
+						<div class="instructor_title">Teacher</div>
+						<div class="instructor_title">Web Development Teacher</div>
+						
+					</div>
+				</div>
+ -->
+			</div>
+		</div>
+	</div>
+
+	<!-- Register -->
+
+	<div class="register">
+		<div class="container">
+			<div class="row">
+				
+				<!-- Register Form -->
+
+				<div class="col-lg-6">
+					<div class="register_form_container">
+						<div class="register_form_title">Enroll the Courses </div>
+						<form action="#" id="register_form" class="register_form">
+							<div class="row register_row">
+								<div class="col-lg-6 register_col">
+									<input type="text" class="form_input" placeholder="Name" required="required">
+								</div>
+								<div class="col-lg-6 register_col">
+									<input type="email" class="form_input" placeholder="Email" required="required">
+								</div>
+
+								<div class="col-lg-6 register_col">
+									<input type="tel" class="form_input" placeholder="Phone">
+								</div>
+								<div class="col-lg-4 register_col mb-0" style=" margin-top: 10px;font-weight: 600;">
+									<label for="course">Select course:</label>
+								</div>
+									<div class="col-lg-2 register_col  "style="font-weight: 500;">
+									<select name="course" id="course">
+									  <option value="c">C</option>
+									  <option value="C++">C++</option>
+									  <option value="JAVA">Java</option>
+									  <option value="python">Python</option>
+									  <option value="CCC">CCC</option>
+									  <option value="ASP .NET">ASP .NET</option>
+									  <option value="Anroid">Anroid</option>
+									   <option value="PHP">PHP</option>
+									      
+									      
+
+									</select>
+								</div>
+
+								<!-- <div class="col-lg-6 register_col">
+									<input type="url" class="form_input" placeholder="Site">
+								</div> -->
+								<div class="col">
+									<button type="submit" class="form_button trans_200">get it now</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+
+				<!-- Register Timer -->
+
+				<div class="col-lg-6">
+					<div class="register_timer_container">
+						<div class="register_timer_title">Register Now For Training</div>
+						<div class="register_timer_text">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce enim nulla, mollis eu metus in, sagittis fringilla tortor.</p>
+						</div>
+						<div class="timer_container">
+							<ul class="timer_list">
+								<li><div id="" class="timer_num">250</div><div class="timer_ss">Projects</div></li>
+
+
+								<li><div id="" class="timer_num">7+</div><div class="timer_ss">Cities</div></li>
+								<li><div id="" class="timer_num">500</div><div class="timer_ss">Modules</div></li>
+								<li><div id="" class="timer_num">100%</div><div class="timer_ss">Learning</div></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<!-- tabs -->
+<h1 style="text-align: center;" class="pt-5">Our Fields of Expertise</h1>
+<p style="text-align: center;">We help you excel in computer sciences. Our team consists of best coders across<br> the country with expertise over building enterprise product.</p>
+
+
+<div class="pc-tab" style="margin-top: 30px;">
+<input checked="checked" id="tab1" type="radio" name="pct" />
+<input id="tab2" type="radio" name="pct" />
+<input id="tab3" type="radio" name="pct" />
+<input id="tab4" type="radio" name="pct" />
+<input id="tab5" type="radio" name="pct" />
+<input id="tab6" type="radio" name="pct" />
+
+  <nav >
+    <ul>
+      <li class="tab1 " >
+        <label for="tab1">Game Building</label>
+      </li>
+      <li class="tab2">
+        <label for="tab2">App Development</label>
+      </li>
+      <li class="tab3">
+        <label for="tab3">Web Development</label>
+      </li>
+        <li class="tab4">
+        <label for="tab4">Internet of Things </label>
+      </li>
+        <li class="tab5">
+        <label for="tab5">Artificial Intelligence</label>
+      </li>
+      <li class="tab6">
+        <label for="tab6">Competitve Programmimg</label>
+      </li>
+    </ul>
+  </nav>
+  <!-- tab description -->
+  <section class="bordersection">
+    <div class="tab1 ">
+<div class="row p-0">
+	<div class="col-lg-7 col-md-12">
+		<img width="600" height="600" src="expert_tab/game_developmet.jpg" alt="">
+    </div>
+
+    <div class="col-lg-5 col-md-12 d-flex flex-column justify-content-center">
+    	<h2>Developing Games</h2>
+    	<p class="pb-4 pt-3 tabs_p_line_height">Games are fun to play. What is more exciting than creating games that have never existed before?  The best technique to learn anything is by building it from scratch.</p>
+    	<ul class="pt-2">
+    		<li class="pb-3"><i class="fa fa-circle mr-2 text-primary" aria-hidden="true"></i>Improve your logical ability</li>
+    		<li class="pb-3"><i class="fa fa-circle mr-2 text-primary" aria-hidden="true"></i>Improve your creative ability</li>
+			<li class="pb-3"><i class="fa fa-circle mr-2 text-primary" aria-hidden="true"></i>Build best quality games</li>
+    	</ul>
+    </div>
+</div> 
+    </div>
+
+    <div class="tab2" >
+     <div class="row p-0">
+	<div class="col-lg-5 col-md-12 d-flex flex-column justify-content-center">
+	
+		<h2>App Development</h2>
+    	<p class="pb-4 pt-3 tabs_p_line_height">Everything around us whether it is payment, marketing, socializing , education is done through apps.</p>
+    	<ul class="pt-2">
+    		<li class="pb-3"><i class="fa fa-circle mr-2 text-primary" aria-hidden="true"></i>App design and layout.</li>
+    		<li class="pb-3"><i class="fa fa-circle mr-2 text-primary" aria-hidden="true"></i>App development and listing.</li>
+			<li class="pb-3"><i class="fa fa-circle mr-2 text-primary" aria-hidden="true"></i>Complex architecture.</li>
+    	</ul>
+    </div>
+
+    <div class="col-lg-7 col-md-12">
+    		<img width="600" height="450" src="expert_tab/app_development.png" alt="">
+    </div>
+</div> 
+</div>
+    <div class="tab3 ">
+     <div class="row p-0">
+	<div class="col-lg-7 col-md-12">
+		<img width="600" height="374" src="expert_tab/web_development.jpg" alt="">
+    </div>
+
+    <div class="col-lg-5 col-md-12 d-flex flex-column justify-content-center">
+    	<h2>Web development</h2>
+    	<p class="pb-4 pt-3 tabs_p_line_height">From google to booking.com there are numerous websites impacting us. Even small businesses own their website.</p>
+    	<ul class="pt-2">
+    		<li class="pb-3"><i class="fa fa-circle mr-2 text-primary" aria-hidden="true"></i>
+UI/UX designing</li>
+    		<li class="pb-3"><i class="fa fa-circle mr-2 text-primary" aria-hidden="true"></i>Web development and scalibility</li>
+			<li class="pb-3"><i class="fa fa-circle mr-2 text-primary" aria-hidden="true"></i>Web hosting and deployment</li>
+    	</ul>
+    </div>
+</div>  
+</div>
+
+     <div class="tab4 ">
+      <div class="row p-0">
+	<div class="col-lg-5 col-md-12 d-flex flex-column justify-content-center">
+	
+		<h2>Internet of Things</h2>
+    	<p class="pb-4 pt-3 tabs_p_line_height">With the expansion in the internet world, everything is getting digitized and the world is soon to be at our fingertips. A ton of digital ecosystems are being created every day and more are to come in the future.</p>
+    	<ul class="pt-2">
+    		<li class="pb-3"><i class="fa fa-circle mr-2 text-primary" aria-hidden="true"></i>
+Understanding electronics.</li>
+    		<li class="pb-3"><i class="fa fa-circle mr-2 text-primary" aria-hidden="true"></i>Operating hardware devices.</li>
+			<li class="pb-3"><i class="fa fa-circle mr-2 text-primary" aria-hidden="true"></i>
+Best in class solutions</li>
+    	</ul>
+    </div>
+
+    <div class="col-lg-7 col-md-12">
+    		<img width="600" height="400" src="expert_tab/internet-of-things.jpg" alt="">
+    </div>
+</div> </div>
+
+
+     <div class="tab5 ">
+     <div class="row p-0">
+	<div class="col-lg-7 col-md-12">
+		<img width="600" height="603" src="expert_tab/artificial-intelligence.png" alt="">
+    </div>
+
+    <div class="col-lg-5 col-md-12 d-flex flex-column justify-content-center">
+    	<h2>Artificial Intelligence</h2>
+    	<p class="pb-4 pt-3 tabs_p_line_height">Artificial intelligence (AI) is the basis for mimicking human intelligence processes through the creation and application of algorithms built into a dynamic computing environment. From health care assistance to self-driving cars,  AI makes computers think and act like humans.</p>
+    	<ul class="pt-2">
+    		<li class="pb-3"><i class="fa fa-circle mr-2 text-primary" aria-hidden="true"></i>
+			Improving Data Intrepretations</li>
+    		<li class="pb-3"><i class="fa fa-circle mr-2 text-primary" aria-hidden="true"></i>Building Customized AI solutions</li>
+			<li class="pb-3"><i class="fa fa-circle mr-2 text-primary" aria-hidden="true"></i>
+	Understanding machines and automatisation</li>
+    	</ul>
+    </div>
+</div></div>
+
+ <div class="tab6 ">
+     <div class="row p-0">
+	<div class="col-lg-8 col-md-12 d-flex flex-column justify-content-center">
+	
+		<h2>Competitive Programming</h2>
+    	<p class="pb-4 pt-3 tabs_p_line_height">Figure out how to compose and write the most efficient and complex codes with ease and prepare to compete with the best programmers around the globe in various competitions like ACM-ICPC, Google Codejam and many more.</p>
+    	<ul class="pt-2">
+    		<li class="pb-3"><i class="fa fa-circle mr-2 text-primary" aria-hidden="true"></i>
+			Mathematical concepts such as number theory, permutation and combination, probability etc.</li>
+    		<li class="pb-3"><i class="fa fa-circle mr-2 text-primary" aria-hidden="true"></i>Learn data structures and algorithms.</li>
+			<li class="pb-3"><i class="fa fa-circle mr-2 text-primary" aria-hidden="true"></i>
+			Solve complex problems and improve your logical ability.</li>
+    	</ul>
+    </div>
+
+    <div class="col-lg-4 col-md-12">
+    		<img width="300" height="240" src="expert_tab/comp_program.jpg" alt="">
+    </div>
+</div> </div>
+
+  </section>
+</div>
+ 
+<div style="display: flex;flex-direction:column; justify-content: center; align-items: center;">
+  <h1 style="font-weight: bold; font-size: 32px; color: #707bfb; margin-bottom: 50px">Features</h1>
+  <div class="row" style="display: flex; justify-content: center; width: 100%; margin: 50px 0px">
+    <div class="col-sm-5 centerInMobile">
+      <h1 class="textLeft" style="font-weight: bold; font-size: 32px;">Digital Ebooks</h1>
+      <p class="textLeft" style="font-size: 16px;">CodingJr provides digital e books which has detailed content available.<br> The e books can be referred 24*7 and are available in a easy to use format.<br>
+        Digital slides are available for every topic with pictorial representations of the same.<br>
+        The E-Books are very interactive and self explanatory.
+      </p>
+    </div>
+    <img style="height: 280px; border-radius: 30px;" src="https://www.codingjr.online/uploads/homepage/ebooks.png" onerror="this.onerror=null;this.src='https://www.codingjr.online/srm_new/images/icon-logo.png';">
+  </div>
+  <div class="row" style="display: flex; justify-content: center; width: 100%; margin: 50px 0px">
+    <div class="col-sm-5 displayFlexMobile"><img class="inAppCodingImg" src="https://www.codingjr.online/uploads/homepage/phone.png" onerror="this.onerror=null;this.src='https://www.codingjr.online/srm_new/images/icon-logo.png';"></div>
+    <div class="paddingInApp centerInMobile">
+      <h1 class="textLeft" style="font-weight: bold; font-size: 32px;">In-App Coding</h1>
+      <p class="textLeft" style="font-size: 16px;">The app is built with in-app coding facility.<br>
+        Students dont require laptop and computers for coding.<br>
+        Cutting edge cloud based computing technology is used to create virtual machines.<br>
+        Virtual labs are provided to help students to get enough time to practice coding.<br>
+        This results in reduced hardware and maintenance costs.
+      </p>
+    </div>
+  </div>
+  <div class="row" style="display: flex; justify-content: center; width: 100%; margin: 50px 0px">
+    <div class="col-sm-5 centerInMobile">
+      <h1 class="textLeft" style="font-weight: bold; font-size: 32px;">Created By IIT &amp; IIM Graduates</h1>
+      <p class="textLeft" style="font-size: 16px;">We are a team of IIT and IIM graduates who build excellent technology solutions for education. We cater to all the academic and technology needs of one institution. Our products help the institute to digitize and implement technology to make learning easier and more fun. </p>
+    </div>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" style="width: 400px;" data-interval="3000">
+      <div class="carousel-inner">
+        <div class="carousel-item">
+          <img style="height: 280px; border-radius: 30px" src="https://www.codingjr.online/srm_new/uploads/slider/61ad15db4db70.png" alt="slide" onerror="this.onerror=null;this.src='https://www.codingjr.online/srm_new/images/icon-logo.png';">
+        </div>
+        <div class="carousel-item active">
+          <img style="height: 280px; border-radius: 30px" src="https://www.codingjr.online/srm_new/uploads/slider/61ad15e07a2d8.png" alt="slide" onerror="this.onerror=null;this.src='https://www.codingjr.online/srm_new/images/icon-logo.png';">
+        </div>
+    
+      </div>
+    </div>
+   
+  </div>
+</div>
+	<!-- Events -->
+
+	<div class="events">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<h2 class="section_title text-center">Upcoming Events</h2>
+				</div>
+			</div>
+			<div class="row events_row">
+				
+				<!-- Event -->
+				<div class="col-lg-4 event_col">
+					<div class="event">
+						<div class="event_image"><img src="images/event_1.jpg" alt=""></div>
+						<div class="event_date d-flex flex-column align-items-center justify-content-center">
+							<div class="event_day">26</div>
+							<div class="event_month">aug</div>
+						</div>
+						<div class="event_body d-flex flex-row align-items-center justify-content-start">
+							<div class="event_title"><a href="#">Networking Day</a></div>
+							<div class="event_tag ml-auto">Free</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Event -->
+				<div class="col-lg-4 event_col">
+					<div class="event">
+						<div class="event_image"><img src="images/event_2.jpg" alt=""></div>
+						<div class="event_date d-flex flex-column align-items-center justify-content-center">
+							<div class="event_day">26</div>
+							<div class="event_month">aug</div>
+						</div>
+						<div class="event_body d-flex flex-row align-items-center justify-content-start">
+							<div class="event_title"><a href="#">Networking Day</a></div>
+							<div class="event_tag ml-auto">Free</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Event -->
+				<div class="col-lg-4 event_col">
+					<div class="event">
+						<div class="event_image"><img src="images/event_3.jpg" alt=""></div>
+						<div class="event_date d-flex flex-column align-items-center justify-content-center">
+							<div class="event_day">26</div>
+							<div class="event_month">aug</div>
+						</div>
+						<div class="event_body d-flex flex-row align-items-center justify-content-start">
+							<div class="event_title"><a href="#">Networking Day</a></div>
+							<div class="event_tag ml-auto">Free</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- Blog -->
+
+	<!-- <div class="blog">
+		<div class="container">
+			<div class="row row-lg-eq-height">
+				
+				
+				<div class="col-lg-6">
+					<div class="blog_left">
+						<div class="blog_title">From Our Blog</div>
+						<div class="blog_text">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce enim nulla, mollis eu metus in, sagittis fringilla tortor.</p>
+						</div>
+						<div class="blog_categories">
+							<div class="row categories_row">
+
+								
+								<div class="col-md-4 blog_category_col">
+									<a href="blog.html">
+										<div class="blog_category">
+											<div class="blog_category_image"><img src="images/blog_1.jpg" alt=""></div>
+											<div class="blog_category_title">travel</div>
+										</div>
+									</a>
+								</div>
+
+								
+								<div class="col-md-4 blog_category_col">
+									<a href="blog.html">
+										<div class="blog_category">
+											<div class="blog_category_image"><img src="images/blog_2.jpg" alt=""></div>
+											<div class="blog_category_title">languages</div>
+										</div>
+									</a>
+								</div>
+
+								
+								<div class="col-md-4 blog_category_col">
+									<a href="blog.html">
+										<div class="blog_category">
+											<div class="blog_category_image"><img src="images/blog_3.jpg" alt=""></div>
+											<div class="blog_category_title">cultures</div>
+										</div>
+									</a>
+								</div>
+
+								
+								<div class="col-md-4 blog_category_col">
+									<a href="blog.html">
+										<div class="blog_category">
+											<div class="blog_category_image"><img src="images/blog_4.jpg" alt=""></div>
+											<div class="blog_category_title">fashion</div>
+										</div>
+									</a>
+								</div>
+
+								
+								<div class="col-md-4 blog_category_col">
+									<a href="blog.html">
+										<div class="blog_category">
+											<div class="blog_category_image"><img src="images/blog_5.jpg" alt=""></div>
+											<div class="blog_category_title">cooking</div>
+										</div>
+									</a>
+								</div>
+
+								
+								<div class="col-md-4 blog_category_col">
+									<a href="blog.html">
+										<div class="blog_category">
+											<div class="blog_category_image"><img src="images/blog_6.jpg" alt=""></div>
+											<div class="blog_category_title">hobbies</div>
+										</div>
+									</a>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+ -->
+				<!-- Blog Right -->
+
+				<div class="col-lg-6">
+					<div class="blog_right">
+						<div class="blog_image" style="background-image:url(images/blog_7.jpg)"></div>
+						<div class="blog_title_container">
+							<div class="blog_right_category"><a href="#">travel</a></div>
+							<div class="blog_right_title"><a href="blog_single.html">Design Better Forms</a></div>
+							<div class="blog_right_text">
+								<p>Whether it is a signup flow, a multi-view stepper, or a monotonous data entry interface, forms are one of the most important components of digital product design.</p>
+							</div>
+							<div class="read_more"><a href="blog_single.html">Read More <img src="images/right.png" alt=""></a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+
+	<footer class="footer">
+		<div class="footer_body">
+			<div class="container">
+				<div class="row">
+
+					<!-- Newsletter -->
+					<div class="col-lg-3 footer_col">
+						<div class="newsletter_container d-flex flex-column align-items-start justify-content-end">
+							<div class="footer_logo mb-auto">
+								<a href="#">Talent Computer </a>
+								<p class=" text-justify mt-2" style="color: rgba(255,255,255,0.4);">Talent Computer is one of the largest IT Training Institute.Talent Computer specializes in providing Courses to students for all software languages.<br> We Provide Courses For BCA, MCA, PGDCA, Bsc(IT), Msc(IT), Msc(CS), Degree, Diploma And Engineering Students</p>
+							
+							</div>
+							
+					</div>
+				
+
+						</div>
+					<!-- About -->
+					<div class="col-lg-2 offset-lg-3 footer_col">
+						<div>
+							<div class="footer_title">Links</div>
+							<ul class="footer_list">
+								<li><a href="#">Courses</a></li>
+								<li><a href="#">CodingJr</a></li>
+								<li><a href="">Faculty</a></li>
+							 	<li><a href="blog.html">Blog</a></li>
+								<li><a href="#">Placement</a></li>
+								<li><a href="contact.html">Contact</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- Help & Support -->
+					<div class="col-lg-2 footer_col">
+						<div class="footer_title">Help & Support</div>
+						<ul class="footer_list">
+							<li><a href="#">Discussions</a></li>
+							<li><a href="#">Troubleshooting</a></li>
+							<li><a href="#">Duolingo FAQs</a></li>
+							<li><a href="#">Schools FAQs</a></li>
+							<li><a href="#">Duolingo English Test FAQs</a></li>
+							<li><a href="#">Status</a></li>
+						</ul>
+					</div>
+
+					<!-- Privacy -->
+					<div class="col-lg-2 footer_col clearfix">
+						<div>
+							<div class="footer_title">Privacy & Terms</div>
+							<ul class="footer_list">
+								<li><a href="#">Community Guidelines</a></li>
+								<li><a href="#">Terms</a></li>
+								<li><a href="#">Brand Guidelines</a></li>
+								<li><a href="#">Privacy</a></li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+
+		</div>
+
+
+		<div class="container-fluid px-5 py-3" style="background-color: #d7d6df;">
+			<div class="row">
+			<div class="col-md-3 ">
+				<a href="https://ahmedabad.codingjr.online/ " target="_blank"><img style="max-width: 230px;  height: auto;"src="https://codingjr.in/wp-content/uploads/2020/03/coding-jr-logo.png" alt="#"></a>
+				
+			</div>
+			<div class="col-md-3">
+			<a href="https://ahmedabad.codingjr.online/ " target="_blank">	<img style="max-width: 230px;  height: auto;"src="https://codingjr.in/wp-content/uploads/2020/03/coding-jr-logo.png" alt="#"></a>
+				
+			</div>
+			<div class="col-md-3">
+			<img style="max-width: 230px;  height: auto;"src="https://codingjr.in/wp-content/uploads/2020/03/coding-jr-logo.png" alt="#">
+				
+			</div>
+			<div class="col-md-3">
+				<img style="max-width: 230px;  height: auto;"src="https://codingjr.in/wp-content/uploads/2020/03/coding-jr-logo.png" alt="#">
+				
+			</div>
+			</div>
+
+		</div>
+
+
+		</div>
+		<div class="copyright">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="copyright_content d-flex flex-md-row flex-column align-items-md-center align-items-start justify-content-start">
+							<div class="cr" style="color: white;"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+								Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved <a href="http://talentitsolutions.in" target="_blank">Talent IT Solutions</a> &amp; Designed and Developed by Talent IT Solutions.
+								<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+							</div>
+							<div class="cr_right ml-md-auto" >
+								
+								<div class="footer_social" >
+									<span class="cr_social_title">follow us</span>
+									<ul>
+										<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="styles/bootstrap4/popper.js"></script>
+<script src="styles/bootstrap4/bootstrap.min.js"></script>
+<script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+<script src="plugins/easing/easing.js"></script>
+<script src="js/custom.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		
+$("nav>ul>li>label").click(function () {
+    $("nav>ul>li>label").removeClass("tab_active");
+
+    // $(".tab").addClass("active"); // instead of this do the below 
+    $(this).addClass("tab_active");   
+});
+});
+</script>
+
+
+</body>
+<style type="text/css">
+	
+
+
+
+
+</style>
+
+</html>
